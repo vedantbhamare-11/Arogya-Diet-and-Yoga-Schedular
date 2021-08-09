@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in</title>
+    <link rel="stylesheet" href="signin.css" />
+  </head>
+  <body>
+    <section class="left-section">
+      <div id="left-cover" class="cover cover-hide">
+        <img src="cover.jpg" alt="" />
+        <h3>Already have an account?</h3>
+        <button type="button" class="switch-btn" onclick="location.reload()">
+          Sign in
+        </button>
+      </div>
+      <div id="left-form" class="form fade-in-element">
+        <h1>Sign in</h1>
+        <form action="" method="post">
+          <input
+            type="text"
+            name="user-name"
+            class="input-box"
+            placeholder="username"
+          />
+          <input
+            type="password"
+            name="user-pass"
+            class="input-box"
+            placeholder="password"
+          />
+          <input type="button" name="signin-btn" class="btn" value="Sign in" />
+        </form>
+      </div>
+    </section>
+
+    <section class="right-section">
+      <div id="right-cover" class="cover fade-in-element">
+        <img src="cover.jpg" alt="" />
+        <h3>Don't have an account?</h3>
+        <button type="button" class="switch-btn" onclick="switchSignup()">
+          Sign up
+        </button>
+      </div>
+      <div id="right-form" class="form form-hide">
+        <h1>Sign up</h1>
+        <form action="" method="post">
+          <input
+            type="email"
+            name="user-email"
+            class="input-box"
+            placeholder="email"
+          />
+          <input
+            type="text"
+            name="user-height"
+            class="input-box"
+            placeholder="height"
+          />
+          <input
+            type="text"
+            name="user-weight"
+            class="input-box"
+            placeholder="weight"
+          />
+          <input
+            type="password"
+            name="user-pass"
+            class="input-box"
+            placeholder="password"
+          />
+          <input
+            type="password"
+            name="user-cpass"
+            class="input-box"
+            placeholder="confirm password"
+          />
+          <!--<div class="switch">
+            <input type="checkbox" id="toggleAll" />
+            <label for="toggleAll"></label>
+          </div>-->
+          <input type="button" name="signup-btn" class="btn" value="Sign up" />
+        </form>
+      </div>
+    </section>
+
+    <script src="signin.js"></script>
+  </body>
+</html>
