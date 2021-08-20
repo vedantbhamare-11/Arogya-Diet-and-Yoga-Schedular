@@ -1,3 +1,11 @@
+//listen for auth status changes
+auth.onAuthStateChanged((user) => {
+  if (user) {
+    console.log("user signed in", user);
+  } else {
+    console.log("user signed out");
+  }
+});
 //sign up
 const signupForm = document.querySelector("#signup-form");
 signupForm.addEventListener("submit", (e) => {
