@@ -60,6 +60,10 @@ body {
   box-shadow: 5px 5px 15px #aaa;
   background-color: #799741;
 }
+.form .btn-pos:hover {
+  box-shadow: 5px 5px 15px #aaa;
+  background-color: #799741;
+}
 
 .form {
   display: flex;
