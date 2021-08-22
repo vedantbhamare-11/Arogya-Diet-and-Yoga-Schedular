@@ -4,7 +4,7 @@
 
 h2 {
     text-align: center;
-
+    color: #424244;
 }
 
 .header {
@@ -40,6 +40,7 @@ h2 {
 
 .content {
     position: relative;
+    font-family: "Segoe UI";
 }
 
 #slider {
@@ -104,6 +105,7 @@ h2 {
 
 .about-us {
     margin: 30px 20px 0px 25px;
+    color: #424244;
 }
 
 .info {
@@ -186,8 +188,7 @@ h2 {
     color: #658031;
     padding: 0px;
     font-size: 40px;
-    border: 2px solid #658031
-    ;
+    border: 2px solid #658031;
     border-radius: 100px;
     color: #658031;
     font-size: 28px;
