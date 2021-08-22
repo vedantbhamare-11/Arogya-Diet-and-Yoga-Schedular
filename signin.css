@@ -40,6 +40,21 @@ body {
   transition: box-shadow 0.5s;
   outline: none;
 }
+.form .btn-pos {
+  min-width: 100px;
+  margin: auto;
+  padding: 10px 35px;
+  background-color: #648030;
+  color: #fff;
+  border: none;
+  font-size: 22px;
+  border-radius: 10px;
+  box-shadow: 15px 15px 20px #a8a8a8;
+  transition: box-shadow 0.5s;
+  outline: none;
+  position: absolute;
+  right: 250px;
+}
 
 .form .btn:hover {
   box-shadow: 5px 5px 15px #aaa;
