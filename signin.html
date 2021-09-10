@@ -4,6 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign in</title>
     <link rel="stylesheet" href="signin.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <section class="left-section">
@@ -24,13 +28,23 @@
             placeholder="Enter your Email"
             id="signin-email"
           />
-          <input
-            type="password"
-            name="user-pass"
-            class="input-box"
-            placeholder="Enter your password"
-            id="signin-password"
-          />
+          <div>
+            <input
+              type="password"
+              name="user-pass"
+              class="input-box"
+              placeholder="Enter your password"
+              id="signin-password"
+            />
+            <span>
+              <i
+                class="fa fa-eye"
+                aria-hidden="true"
+                id="eye1"
+                onclick="showPass1()"
+              ></i>
+            </span>
+          </div>
           <button class="btn-pos" name="signin-btn">Sign in</button>
         </form>
       </div>
@@ -60,19 +74,40 @@
             placeholder="Enter Your email"
             id="signup-email"
           />
-          <input
-            type="password"
-            name="user-pass"
-            class="input-box"
-            placeholder="password"
-            id="signup-password"
-          />
-          <input
-            type="password"
-            name="user-cpass"
-            class="input-box"
-            placeholder="confirm password"
-          />
+          <div>
+            <input
+              type="password"
+              name="user-pass"
+              class="input-box"
+              placeholder="password"
+              id="signup-password"
+            />
+            <span>
+              <i
+                class="fa fa-eye"
+                aria-hidden="true"
+                id="eye2"
+                onclick="showPass2()"
+              ></i>
+            </span>
+          </div>
+          <div>
+            <input
+              type="password"
+              name="user-cpass"
+              class="input-box"
+              placeholder="confirm password"
+              id="confirm-password"
+            />
+            <span>
+              <i
+                class="fa fa-eye"
+                aria-hidden="true"
+                id="eye3"
+                onclick="showPass3()"
+              ></i>
+            </span>
+          </div>
           <button class="btn-pos" name="signup-btn">Sign up</button>
         </form>
       </div>
