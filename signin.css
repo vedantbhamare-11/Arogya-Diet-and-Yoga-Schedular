@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI";
+  font-size: 25px;
+  background-color: #f3fce2;
+}
+
+.form input {
+  min-width: 400px;
+  display: block;
+  margin: 20px;
+  padding: 15px 20px;
+  background-color: #fdfffb;
+  font-size: 15px;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  box-shadow: 15px 15px 25px #a8a8a8;
+  transition: box-shadow 0.25s;
+}
+
+.form input:focus {
+  box-shadow: 5px 5px 15px #a8a8a8;
+}
+.form .btn {
+  min-width: 100px;
+  margin: auto;
+  padding: 10px 35px;
+  background-color: #648030;
+  color: #fff;
+  border: none;
+  font-size: 22px;
+  border-radius: 10px;
+  box-shadow: 15px 15px 20px #a8a8a8;
+  transition: box-shadow 0.5s;
+  outline: none;
+}
+.form .btn-pos {
+  min-width: 100px;
+  margin: auto;
+  padding: 10px 35px;
+  background-color: #648030;
+  color: #fff;
+  border: none;
+  font-size: 22px;
+  border-radius: 10px;
+  box-shadow: 15px 15px 20px #a8a8a8;
+  transition: box-shadow 0.5s;
+  outline: none;
+  position: absolute;
+  right: 250px;
+}
+
+.form .btn:hover {
+  box-shadow: 5px 5px 15px #aaa;
+  background-color: #799741;
+}
+.form .btn-pos:hover {
+  box-shadow: 5px 5px 15px #aaa;
+  background-color: #799741;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+  width: 50vw;
+  position: absolute;
+  bottom: 0px;
+  font-size: 25px;
+}
+
+.left-section .form {
+  float: left;
+  margin: 35vh auto;
+}
+
+.right-section .form {
+  float: right;
+  margin: 30vh auto;
+  right: 0;
+}
+
+.cover .switch-btn {
+  position: absolute;
+  bottom: 0;
+  font-size: 25px;
+  margin: 40vh auto;
+  padding: 10px 55px;
+  background-color: #648030;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 15px 15px 25px #a8a8a8;
+  transition: box-shadow 0.25s;
+  outline: none;
+}
+
+.cover .switch-btn:hover {
+  box-shadow: 5px 5px 15px #aaa;
+  background-color: #799741;
+}
+
+.left-section .cover {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.left-section .cover img {
+  height: 100vh;
+  width: 50vw;
+  opacity: 15%;
+}
+
+.left-section .cover h3 {
+  position: absolute;
+  bottom: 0;
+  margin: 50vh auto;
+  color: rgb(68, 66, 66);
+  font-size: 25px;
+}
+
+.left-section .cover-hide {
+  visibility: hidden;
+}
+
+.left-section .form-hide {
+  visibility: hidden;
+}
+
+.right-section .cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.right-section .cover img {
+  height: 100vh;
+  width: 50vw;
+  opacity: 15%;
+}
+
+.right-section .cover h3 {
+  position: absolute;
+  bottom: 0;
+  margin: 50vh auto;
+  color: rgb(68, 66, 66);
+  font-size: 25px;
+}
+
+.right-section .cover-hide {
+  visibility: hidden;
+}
+
+.right-section .form-hide {
+  visibility: hidden;
+}
+
+.fade-in-element {
+  animation-name: fade-in-element;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in-element {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Show Password icon */
+#eye1 {
+  position: absolute;
+  right: 130px;
+  transform: translate(0, -50%);
+  top: 82%;
+  cursor: pointer;
+}
+#eye2 {
+  position: absolute;
+  right: 130px;
+  transform: translate(0, -50%);
+  top: 80%;
+  cursor: pointer;
+}
+#eye3 {
+  position: absolute;
+  right: 130px;
+  transform: translate(0, -50%);
+  top: 102%;
+  cursor: pointer;
+}
+.fa {
+  color: #7a797e;
+}
