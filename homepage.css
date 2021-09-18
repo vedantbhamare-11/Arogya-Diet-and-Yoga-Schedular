@@ -11,7 +11,9 @@ h2 {
     padding-top: 12px;
     padding-right: 10px
 }
-
+.logo  {
+    margin-left: 20px;
+}
 .link {
 
     text-decoration: none;
