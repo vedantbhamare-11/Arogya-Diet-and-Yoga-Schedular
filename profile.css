@@ -74,23 +74,26 @@
 
 .submit {
     background-color: #648030;
+    color: #fff;
+    border: none;
     border-radius: 12px;
-    border: 0;
-    box-sizing: border-box;
-    color: #eee;
-    cursor: pointer;
-    font-size: 18px;
+    box-shadow: 15px 15px 25px #a8a8a8;
+    transition: box-shadow 0.25s;
+    outline: none;
+    width: 130px;
     height: 40px;
-    margin-top: 38px;
-    margin: 10px 10px 10px 10px;
-    outline: 0;
-    text-align: center;
-    width: 20%;
+    font-size: 22px;
+    margin-top: 12px;
 }
 
-.submit:active {
-    background-color: #495057;
+.submit:hover {
+    box-shadow: 5px 5px 15px #aaa;
+    background-color: #799741;
 }
+
+/* .submit:active {
+    background-color: #495057;
+} */
 
 .container {
     display: flex;
