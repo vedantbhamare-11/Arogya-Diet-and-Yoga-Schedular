@@ -193,14 +193,7 @@ body {
   position: absolute;
   right: 130px;
   transform: translate(0, -50%);
-  top: 80%;
-  cursor: pointer;
-}
-#eye3 {
-  position: absolute;
-  right: 130px;
-  transform: translate(0, -50%);
-  top: 102%;
+  top: 93%;
   cursor: pointer;
 }
 .fa {

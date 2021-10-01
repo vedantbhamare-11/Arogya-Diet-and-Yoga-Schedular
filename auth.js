@@ -16,9 +16,15 @@ signupForm.addEventListener("submit", (e) => {
   const password = signupForm["signup-password"].value;
 
   //signup the user
-  auth.createUserWithEmailAndPassword(email, password).then((cred) => {
-    console.log(cred);
-  });
+  auth
+    .createUserWithEmailAndPassword(email, password)
+    .then((cred) => {
+      console.log(cred);
+    })
+    .catch((err) => {
+      alert(err.message);
+    });
+  window.location.href = "profile.html";
 });
 
 //login
@@ -29,9 +35,14 @@ signinForm.addEventListener("submit", (e) => {
   const email = signinForm["signin-email"].value;
   const password = signinForm["signin-password"].value;
 
-  auth.signInWithEmailAndPassword(email, password).then((cred) => {
-    console.log(cred.user);
-  });
+  auth
+    .signInWithEmailAndPassword(email, password)
+    .then((cred) => {
+      console.log(cred.user);
+    })
+    .catch((err) => {
+      alert(err.message);
+    });
 });
 // logout
 const logout = documment.querySelector("#logout");
