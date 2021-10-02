@@ -20,11 +20,11 @@ signupForm.addEventListener("submit", (e) => {
     .createUserWithEmailAndPassword(email, password)
     .then((cred) => {
       console.log(cred);
+      window.location.href = "profile.html";
     })
     .catch((err) => {
       alert(err.message);
     });
-  window.location.href = "profile.html";
 });
 
 //login
