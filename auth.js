@@ -39,6 +39,7 @@ signinForm.addEventListener("submit", (e) => {
     .signInWithEmailAndPassword(email, password)
     .then((cred) => {
       console.log(cred.user);
+      window.location.href = "mainpage.html";
     })
     .catch((err) => {
       alert(err.message);
