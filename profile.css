@@ -91,9 +91,9 @@
     background-color: #799741;
 }
 
-/* .submit:active {
-    background-color: #495057;
-} */
+.submit:active {
+    background-color: #627a35;
+}
 
 .container {
     display: flex;

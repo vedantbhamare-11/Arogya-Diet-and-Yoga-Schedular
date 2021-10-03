@@ -1,0 +1,279 @@
+.my-container {
+    margin: 0px 25px 0px 25px;
+}
+
+h2 {
+    text-align: center;
+    color: #424244;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.header {
+    padding-top: 12px;
+    padding-right: 10px
+}
+
+.link {
+
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.wrap {
+    overflow: hidden;
+    position: relative;
+
+}
+
+.bg {
+    opacity: 0.4;
+    background: url(background.jpg);
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.content {
+    position: relative;
+    font-family: "Segoe UI";
+}
+
+.fa-icon {
+    color: black;
+    margin-top: 5px;
+
+}
+
+.fa-icon :active {
+    color: #627a35;
+}
+
+h1 {
+    padding-top: 50px;
+    margin-left: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.scale_container-1 {
+    margin: 80px 30px 0px 30px;
+    width: 14%;
+    height: 25px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    background-color: #6583d4;
+    transition: all 0.5s;
+    will-change: transform;
+
+    display: inline-flex;
+}
+
+.scale_container-2 {
+    left: 14.2%;
+    bottom: 50px;
+    margin: 20px 30px 0px 30px;
+    width: 8%;
+    height: 25px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    background-color: #81e751;
+    transition: all 0.5s;
+    will-change: transform;
+
+    display: inline-flex;
+}
+
+.scale_container-3 {
+    left: 22.4%;
+    bottom: 100px;
+    margin: 20px 30px 0px 30px;
+    width: 8%;
+    height: 25px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    background-color: #bcca37;
+    transition: all 0.5s;
+    will-change: transform;
+
+    display: inline-flex;
+}
+
+.scale_container-4 {
+    left: 30.6%;
+    bottom: 150px;
+    margin: 20px 30px 0px 30px;
+    width: 18%;
+    height: 25px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    background-color: #e46e29;
+    transition: all 0.5s;
+    will-change: transform;
+
+    display: inline-flex;
+}
+
+.scale_container-5 {
+    left: 48.8%;
+    bottom: 200px;
+    margin: 20px 30px 0px 30px;
+    width: 46%;
+    height: 25px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    background-color: #bd3939;
+    transition: all 0.5s;
+    will-change: transform;
+
+    display: inline-flex;
+}
+
+
+.progress-bar {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background-color: #e76f51;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    border-radius: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+    z-index: 0;
+}
+
+.progress-bar__text {
+    display: none;
+}
+
+.pointer {
+    position: relative;
+    z-index: 1;
+    display: inline;
+    bottom: 224px;
+    left: 20%;
+    margin: 0px 5px 0px 20px;
+}
+
+.scale-align {
+    text-align: left;
+    margin-left: 50px;
+    position: relative;
+    font-size: 35px;
+    top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    color: black;
+}
+
+.scale-align-2 {
+    text-align: left;
+    margin-left: 50px;
+    position: relative;
+    font-size: 35px;
+    top: -130px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    color: black;
+}
+
+
+.index {
+    left: 20px;
+    bottom: 200px;
+    margin: -15px 30px 0px 30px;
+    width: 30px;
+    height: 10px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s;
+    will-change: transform;
+
+}
+
+.index-blue {
+    background-color: #6583d4;
+}
+
+.index-green {
+    background-color: #81e751;
+}
+
+.index-yellow {
+    background-color: #bcca37;
+}
+
+.index-orange {
+    background-color: #e46e29;
+}
+
+.index-red {
+    background-color: #bd3939;
+}
+
+.index-text {
+    position: relative;
+    left: 100px;
+    bottom: 217px;
+}
+
+.submit {
+    background-color: #648030;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 15px 15px 25px #a8a8a8;
+    transition: box-shadow 0.25s;
+    outline: none;
+    width: 150px;
+    height: 50px;
+    font-size: 22px;
+    margin-top: 12px;
+    left: 130px;
+    position: relative;
+    bottom: 70px;
+}
+
+.submit:hover {
+    box-shadow: 5px 5px 15px #aaa;
+    background-color: #799741;
+}
+
+.submit:active {
+    background-color: #627a35;
+}
+
+
+
+.diet {
+    position: relative;
+    bottom: 70px;
+    left: 70px;
+
+}
+
+.yoga {
+    position: relative;
+    bottom: 30px;
+    left: 70px;
+}
