@@ -19,3 +19,12 @@ auth.onAuthStateChanged((user) => {
     console.log("user signed out");
   }
 });
+let gender = document.getElementById("userGender").value;
+let gender_value;
+if (gender == "male") {
+  gender_value = document.getElementById("male").value;
+} else if (gender == "female") {
+  gender_value = document.getElementById("female").value;
+}
+
+console.log(gender_value);

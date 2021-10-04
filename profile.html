@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -62,18 +63,34 @@
 
             <div class="container">
               <label for="gender">Select your Gender:</label>
-              <input type="radio" id="male" checked="checked" name="radio" />
-              <label for="male" class="gender">Male</label>
-              <input type="radio" id="female" name="radio" />
-              <label for="female" class="gender">Female</label>
+              <div id="userGender">
+                <input
+                  type="radio"
+                  id="male"
+                  checked="checked"
+                  name="radio"
+                  value="male"
+                />
+                <label for="male" class="gender">Male</label>
+                <input type="radio" id="female" name="radio" value="female" />
+                <label for="female" class="gender">Female</label>
+              </div>
             </div>
 
             <div class="container">
               <label for="meal">Meal Preference:</label>
-              <input type="radio" id="veg" checked="checked" name="meal" />
-              <label for="veg" class="gender">Veg</label>
-              <input type="radio" id="non-veg" name="meal" />
-              <label for="non-veg" class="gender">Non Veg</label>
+              <div id="userMeal">
+                <input
+                  type="radio"
+                  id="veg"
+                  checked="checked"
+                  name="meal"
+                  value="veg"
+                />
+                <label for="veg" class="gender">Veg</label>
+                <input type="radio" id="non-veg" name="meal" value="nonVeg" />
+                <label for="non-veg" class="gender">Non Veg</label>
+              </div>
             </div>
             <button type="text" class="submit">Submit</button>
           </form>
