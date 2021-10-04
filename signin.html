@@ -108,9 +108,11 @@
       // make auth and firestore references
       const auth = firebase.auth();
       const db = firebase.firestore();
+      db.settings({ timestampsInSnapshots: true });
     </script>
 
     <script src="signin.js"></script>
     <script src="auth.js"></script>
+    <script src="db.js"></script>
   </body>
 </html>
