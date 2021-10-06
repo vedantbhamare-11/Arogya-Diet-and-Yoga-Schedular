@@ -1,10 +1,11 @@
+const userName = document.querySelector(".user-name");
+const profileForm = document.querySelector("#profile-form");
 //listen for auth status changes
 auth.onAuthStateChanged((user) => {
   if (user) {
-    const profileForm = document.querySelector("#profile-form");
     profileForm.addEventListener("submit", (e) => {
       e.preventDefault();
-      alert("function is working");
+      alert(profileForm["name"].value + " profile updated");
       return db
         .collection("users")
         .doc(user.uid)
