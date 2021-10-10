@@ -16,6 +16,12 @@ auth.onAuthStateChanged((user) => {
           age: profileForm["age"].value,
           gender: document.querySelector('input[name="radio"]:checked').value,
           meal: document.querySelector('input[name="meal"]:checked').value,
+          BMI: parseInt(
+            (profileForm["weight"].value /
+              profileForm["height"].value /
+              profileForm["height"].value) *
+              10000
+          ),
         });
     });
     console.log("user signed in", user);
