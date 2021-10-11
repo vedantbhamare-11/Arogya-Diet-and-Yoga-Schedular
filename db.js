@@ -1,4 +1,3 @@
-const userName = document.querySelector(".user-name");
 const profileForm = document.querySelector("#profile-form");
 //listen for auth status changes
 auth.onAuthStateChanged((user) => {
@@ -22,6 +21,9 @@ auth.onAuthStateChanged((user) => {
               profileForm["height"].value) *
               10000
           ),
+        })
+        .then(() => {
+          window.location.href = "mainpage.html";
         });
     });
     console.log("user signed in", user);
