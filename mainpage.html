@@ -23,6 +23,8 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
 
+
+
 </head>
 
 <body>
@@ -34,13 +36,13 @@
                     <img src="Arogya_Logo.png" alt="logo" class="logo">
                 </div>
                 <div class="col-8">
-                
+
                 </div>
                 <div class="col-1">
 
                 </div>
                 <div class="col-1">
-                
+
                     <div class="dropdown">
                         <a class=" dropdown-toggle link fa fa-user fa-2x fa-icon" href="#" role="button"
                             id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
@@ -152,38 +154,43 @@
 
             <div class="row">
                 <h2 class="scale-align-2">Today's Schedule</h2>
-                <h3 class="diet">Diet Plan</h3>
+                <div class="col-6">
+                    <h3 class="diet">Your Diet Plan</h3>
+                </div>
+                <div class="col-6">
+                    <h3 class="diet"> Your Yoga Asanas</h3>
+                </div>
             </div>
+
             <div class="row">
-                <div class="col-4">
-                    <button type="text" class="submit id="myBtn">Breakfast</button>
+                <div class="popup" id="popup-1">
+                    <div class="overlay">
+                        <div class="text">
+                            <div class="close-btn">
+                                &times;
+                            </div>
+                            <h1>title</h1>
+                            <p>content here</p>
+                        </div>
+                    </div>
+                   
                 </div>
-                <div class="col-4">
-                    <button type="text" class="submit">Lunch</button>
+                <div class="col-6">
+                    <button type="text" class="submit" onclick="togglepopup()">Diet</button>
                 </div>
-                <div class="col-4">
-                    <button type="text" class="submit">Dinner</button>
+              
+                <div class="col-6">
+                    <button type="text" class="submit">Yoga</button>
                 </div>
+
             </div>
-            <div class="row">
-                <h3 class="yoga1">
-                    Your Yoga Asanas
-                </h3>
-            </div>
-            <div class="row">
-                <div class="col-4">
+        
 
-                </div>
-
-                <div class="col-4">
-                    <button type="text" class="submit1">Yoga</button>
-                </div>
-
-                <div class="col-4">
-
-                </div>
-            </div>
-            
+<script>
+    function togglepopup() {
+        document.getElementById("popup-1").classList.toggle("active");
+    }
+</script>
         </div>
 </body>
 
