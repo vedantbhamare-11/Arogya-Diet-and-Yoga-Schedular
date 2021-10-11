@@ -1,4 +1,3 @@
-const userName = document.querySelector(".user-name");
 const profileForm = document.querySelector("#profile-form");
 //listen for auth status changes
 auth.onAuthStateChanged((user) => {

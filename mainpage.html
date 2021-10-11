@@ -56,21 +56,7 @@
                 </div>
 
             </div>
-            <div class="row">
-
-                <h1>Hey User...</h1>
-                <!-- <script>
-                        Parse.User.logIn(username, password, {
-            success: function(user) {
-                var currentUser = Parse.User.current(); 
-                currentUser.fetch().then(function(fetchedUser) {
-                var name = fetchedUser.getUsername();
-                $('.alertmsg').html('<div id="alert"><p>Hey' + name + '</div>');
-                });
-            }
-            });
-                  </script> -->
-            </div>
+            <div class="user-details"></div>
             <div class="row scale">
                 <h2 class="scale-align">BMI Scale</h2>
                 <div class="container">
@@ -167,6 +153,28 @@
             </div>
 
         </div>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyB-y5ae03YDxeYw0SYDk-xnlJhGItLzHZE",
+        authDomain: "diet-yoga.firebaseapp.com",
+        projectId: "diet-yoga",
+        appId: "1:15726019101:web:5250aa33f8f59546b87cf4",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      // make auth and firestore references
+      const auth = firebase.auth();
+      const db = firebase.firestore();
+      db.settings({ timestampsInSnapshots: true });
+    </script>
+
+    <script src="retrive.js"></script>
 </body>
 
 </html>
