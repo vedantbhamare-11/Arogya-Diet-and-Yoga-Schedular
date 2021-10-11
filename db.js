@@ -22,6 +22,9 @@ auth.onAuthStateChanged((user) => {
               profileForm["height"].value) *
               10000
           ),
+        })
+        .then(() => {
+          window.location.href = "mainpage.html";
         });
     });
     console.log("user signed in", user);
