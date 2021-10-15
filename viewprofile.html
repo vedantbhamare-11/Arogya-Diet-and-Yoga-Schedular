@@ -36,13 +36,33 @@
               </div>
             </div>
           </div>
-          <button type="text" class="submit" id="profileButton">Back</button>
-          <button type="text" class="submit" id="profileButton">
+          <button
+            type="text"
+            class="submit"
+            id="profileButton"
+            onclick="windowChange1()"
+          >
+            Back
+          </button>
+          <button
+            type="text"
+            class="submit"
+            id="profileButton"
+            onclick="windowChange2()"
+          >
             Edit Profile
           </button>
         </div>
       </div>
     </div>
+    <script>
+      function windowChange1() {
+        window.location.href = "mainpage.html";
+      }
+      function windowChange2() {
+        window.location.href = "profile.html";
+      }
+    </script>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
