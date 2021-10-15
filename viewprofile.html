@@ -23,37 +23,23 @@
       >
         <div class="">Profile</div>
         <div class="card-body text-dark">
-          <form class="form" id="profile-form">
+          <div class="form" id="profile-form">
             <div class="labels">
-                <div class="row ">
-                    Name:
-                </div>
-                <div class="row ">
-                    Height:
-                </div>
-                <div class="row ">
-                    Height:
-                </div>
-                <div class="row ">
-                    Age:
-                </div>
-                <div class="row ">
-                    Gender:
-                </div>
-                <div class="row ">
-                    Meal Preferance:
-                </div>
-                <div class="row ">
-                    Activity Level:
-                </div>
+              <div class="user-info view-name">Name: loading...</div>
+              <div class="user-info view-height">Height: loading...</div>
+              <div class="user-info view-weight">Weight: loading...</div>
+              <div class="user-info view-age">Age: loading...</div>
+              <div class="user-info view-gender">Gender: loading...</div>
+              <div class="user-info view-meal">Meal Preferance: loading...</div>
+              <div class="user-info view-activity">
+                Activity Level: loading...
+              </div>
             </div>
-            <button type="text" class="submit" id="profileButton">
-                Back
-              </button>
-            <button type="text" class="submit" id="profileButton">
-              Edit Profile
-            </button>
-          </form>
+          </div>
+          <button type="text" class="submit" id="profileButton">Back</button>
+          <button type="text" class="submit" id="profileButton">
+            Edit Profile
+          </button>
         </div>
       </div>
     </div>
@@ -80,5 +66,6 @@
     </script>
 
     <script src="db.js"></script>
+    <script src="profile.js"></script>
   </body>
 </html>

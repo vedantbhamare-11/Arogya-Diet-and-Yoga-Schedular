@@ -1,54 +1,64 @@
 .bg {
-    opacity: 0.4;
-    background: url(background.jpg);
-    background-size: cover;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
+  opacity: 0.4;
+  background: url(background.jpg);
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .my-container {
-    margin: 0px 25px 0px 25px;
+  margin: 0px 25px 0px 25px;
 }
 
 .profile {
-    font-size: 30px;
-    text-align: center;
-    padding-top: 20px;
-    opacity: 0.8;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+  opacity: 0.8;
 }
 
-
-
 .submit {
-    background-color: #648030;
-    color: #fff;
-    border: none;
-    border-radius: 12px;
-    box-shadow: 15px 15px 25px #a8a8a8;
-    transition: box-shadow 0.25s;
-    outline: none;
-    width: 150px;
-    height: 50px;
-    font-size: 22px;
-    margin-top: 30px;
-    margin-left: 20px;
+  background-color: #648030;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 15px 15px 25px #a8a8a8;
+  transition: box-shadow 0.25s;
+  outline: none;
+  width: 150px;
+  height: 50px;
+  font-size: 22px;
+  margin-top: 30px;
+  margin-left: 20px;
 }
 
 .submit:hover {
-    box-shadow: 5px 5px 15px #aaa;
-    background-color: #799741;
+  box-shadow: 5px 5px 15px #aaa;
+  background-color: #799741;
 }
 
 .submit:active {
-    background-color: #627a35;
+  background-color: #627a35;
 }
 
 .labels {
-   margin-left: 25%;
-   font-family: sans-serif;
-   font-size: 25px;
-   line-height: 55px;
+  margin-left: 25%;
+  font-family: sans-serif;
+  font-size: 25px;
+  line-height: 55px;
+}
+
+.user-info {
+  font-family: "Century Schoolbook", Georgia, Times, serif;
+  font-size: 15px;
+  font-weight: bold;
+  font-variant: normal;
+  text-transform: uppercase;
+  margin-top: 5px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  padding-right: 150px;
 }
