@@ -6,8 +6,8 @@ auth.onAuthStateChanged((user) => {
       .get()
       .then((doc) => {
         const html = `
-        <h1>Hey ${doc.data().name}</h1>
-        <h1>Your BMI is ${doc.data().BMI} </h1>
+        <div>Hey ${doc.data().name}</div>
+        <div>Your BMI is ${doc.data().BMI} </div>
         `;
         userDetails.innerHTML = html;
       });
