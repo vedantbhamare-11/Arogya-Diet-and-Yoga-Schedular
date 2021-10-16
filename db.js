@@ -10,11 +10,14 @@ auth.onAuthStateChanged((user) => {
         .doc(user.uid)
         .set({
           name: profileForm["name"].value,
-          height: profileForm["height"].value,
-          weight: profileForm["weight"].value,
-          age: profileForm["age"].value,
+          height: parseInt(profileForm["height"].value),
+          weight: parseInt(profileForm["weight"].value),
+          age: parseInt(profileForm["age"].value),
           gender: document.querySelector('input[name="radio"]:checked').value,
           meal: document.querySelector('input[name="meal"]:checked').value,
+          activity: parseInt(
+            document.querySelector('input[name="workout"]:checked').value
+          ),
           BMI: parseInt(
             (profileForm["weight"].value /
               profileForm["height"].value /
