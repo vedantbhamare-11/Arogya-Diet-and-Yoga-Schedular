@@ -148,36 +148,42 @@
                 </div>
             </div>
 
+
             <div class="row">
-                <div class="popup" id="popup-1">
-                    <div class="overlay">
-                        <div class="text">
-                            <div class="close-btn">
-                                &times;
-                            </div>
-                            <h1>title</h1>
-                            <p>content here</p>
-                        </div>
-                    </div>
-                   
+                <div class="col-6">
+                    <a href="#popup1"> <button type="text" class="button submit" >Diet</button></a>
                 </div>
                 <div class="col-6">
-                    <button type="text" class="submit" onclick="togglepopup()">Diet</button>
-                </div>
-              
-                <div class="col-6">
-                    <button type="text" class="submit">Yoga</button>
-                </div>
-
+                    <a href="#popup2"> <button type="text" class="button submit">Yoga</button></a>
+                 </div>
             </div>
-        
+            
+          
+            <div id="popup1" class="overlay">
+                <div class="popup">
+                    <h2>Diet Schedule</h2>
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                        Thank to pop me out of that button, but now i'm done so you can close this window.
+                    </div>
+                </div>
+            </div>
 
-<script>
-    function togglepopup() {
-        document.getElementById("popup-1").classList.toggle("active");
-    }
-</script>
+            <div id="popup2" class="overlay">
+                <div class="popup">
+                    <h2>Yoga Schedule</h2>
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                        Thank to pop me out of that button, but now i'm done so you can close this window.
+                    </div>
+                </div>
+            </div>
+    
         </div>
+
+
+       
+
         <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>

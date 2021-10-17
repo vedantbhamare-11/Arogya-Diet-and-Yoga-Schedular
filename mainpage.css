@@ -29,7 +29,7 @@ h2 {
 }
 
 .bg {
-  opacity: 0.4;
+  opacity: 0.3;
   background: url(background.jpg);
   background-size: cover;
   position: absolute;
@@ -174,6 +174,13 @@ h1 {
 31%-48%-significantly over weight
 49%-95%-dangerously over weight */
 
+
+/* 12-19 - Under-weight
+20-24 - Healthy Weight
+25-29 - Over-weight
+30-39 - Significantly Over-weight
+40-63 - Dangerously Over-weight */
+
 .scale-align {
   text-align: left;
   margin-left: 50px;
@@ -235,22 +242,7 @@ h1 {
   bottom: 217px;
 }
 
-.submit {
-  background-color: #648030;
-  color: #fff;
-  border: none;
-  border-radius: 12px;
-  box-shadow: 15px 15px 25px #a8a8a8;
-  transition: box-shadow 0.25s;
-  outline: none;
-  width: 150px;
-  height: 50px;
-  font-size: 22px;
-  margin-top: 25px;
-  left: 40%;
-  position: relative;
-  bottom: 70px;
-}
+
 
 .submit:hover {
   box-shadow: 5px 5px 15px #aaa;
@@ -268,61 +260,104 @@ h1 {
   text-align: center;
 }
 
-.popup .overlay {
-  position: relative;
-  top: 0px;
-  left: 0px;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 1;
-  display: none;
-}
 
-.popup .text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  background: #fff;
-  width: 450px;
-  height: 220px;
-  z-index: 2;
-  text-align: center;
-  padding: 20px;
-  box-sizing: border-box;
-}
 
-.popup .close-btn {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  width: 30px;
-  height: 30px;
-  background: #222;
+.button {
+  font-size: 22px;
+  padding: 10px;
   color: #fff;
-  font-size: 25px;
-  font-weight: 600;
-  line-height: 25px;
-  text-align: center;
-  border-radius: 50%;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
 }
 
-.popup .active .overlay {
-  display: block;
+.submit {
+  background-color: #648030;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 15px 15px 25px #a8a8a8;
+  transition: box-shadow 0.25s;
+  outline: none;
+  width: 150px;
+  height: 50px;
+  font-size: 22px;
+  margin-top: 25px;
+  left: 40%;
+  position: relative;
+  bottom: 70px;
 }
 
-.popup .active .text {
-  transition: all 300ms ease-in-out;
-  transform: translate(-50%, -50%) scale(0);
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
 }
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 50%;
+  height: 60%;
+  position: relative;
+  
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #648030;
+}
+.popup .close:hover {
+  color: #799741;
+}
+.popup .content {
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
 .user-details {
-  font-family: "Century Schoolbook", Georgia, Times, serif;
-  font-size: 35px;
-  font-weight: lighter;
+  font-family: sans-serif;
+  font-size: 30px;
+  
   font-variant: normal;
   text-transform: uppercase;
   margin-top: 10px;
   text-align: center !important;
-  letter-spacing: 0.1em;
+  
+  line-height: 70px;
+  font-weight: 600;
+  color: black;
 }
