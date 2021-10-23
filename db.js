@@ -15,9 +15,8 @@ auth.onAuthStateChanged((user) => {
           age: parseInt(profileForm["age"].value),
           gender: document.querySelector('input[name="radio"]:checked').value,
           meal: document.querySelector('input[name="meal"]:checked').value,
-          activity: parseInt(
-            document.querySelector('input[name="workout"]:checked').value
-          ),
+          activity: document.querySelector('input[name="workout"]:checked')
+            .value,
           BMI: parseInt(
             (profileForm["weight"].value /
               profileForm["height"].value /
