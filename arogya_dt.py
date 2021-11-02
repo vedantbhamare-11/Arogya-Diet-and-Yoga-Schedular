@@ -3,14 +3,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 
 dataset = pd.read_csv("food.csv")
-
-
-
 #Seprating dataset into input and output values
 X = dataset[['bmi','age','vegNonveg','gender','activity']]
 #print(X)

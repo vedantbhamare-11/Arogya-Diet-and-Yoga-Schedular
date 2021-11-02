@@ -1,4 +1,6 @@
 const userDetails = document.querySelector(".user-details");
+const yogaContent = document.querySelector(".yoga-content");
+const dietContent = document.querySelector(".diet-content");
 auth.onAuthStateChanged((user) => {
   if (user) {
     db.collection("users")
@@ -14,10 +16,23 @@ auth.onAuthStateChanged((user) => {
         const weight = doc.data().weight;
         const BMI = doc.data().BMI;
         const age = doc.data().age;
-        const input = [height, weight, BMI, age];
+        const vegNonveg = doc.data().meal;
+        const gender = doc.data().gender;
+        const activity = doc.data().activity;
+        const h = doc.data().height;
+        const w = doc.data().weight;
+        const inputYoga = [height, weight, BMI, age];
+        const inputDiet = [w, h, BMI, age, vegNonveg, gender, activity];
 
-        axios.post("localhost:5000/yoga", input).then((response) => {
+        axios.post("http://localhost:5000/yoga", inputYoga).then((response) => {
           console.log(response.data);
+          const yogaHTML = `<div>${response.data.output[1]}</div>`;
+          yogaContent.innerHTML = yogaHTML;
+        });
+        axios.post("http://localhost:5000/diet", inputDiet).then((response) => {
+          console.log(response.data);
+          const dietHTML = `<div>${response.data.output[1]}</div>`;
+          dietContent.innerHTML = dietHTML;
         });
       });
   }
