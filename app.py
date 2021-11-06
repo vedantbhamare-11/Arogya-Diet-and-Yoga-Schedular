@@ -13,7 +13,8 @@ from sklearn.metrics import accuracy_score
 
 # initial flask setup
 app = Flask(__name__)
-CORS(app, resources={r"/api/": {"origins": "*"}})
+# CORS(app, resources={r"/api/": {"origins": "*"}})
+CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
 #returns diet
@@ -66,11 +67,17 @@ def diet(w,h,bmi,age,vegNonveg,gender,activity):
     # vegNonveg = int(input("enter your veg: 0 or nonveg: 1"))
     # activity = float(input("Enter activity 1.20 for no exc 1.37 for light exc 1.55 for moderate exc: "))
 
-    person = [[w,h,bmi,age,vegNonveg,gender,activity]]
+    person = [[bmi,age,vegNonveg,gender,activity]]
     bmi = model.predict(person)
-    print("Your Bmi value: ",bmi[0])
+    # print("Your Bmi value: ",bmi[0])
+
+    # print("Your activity value: ",activity)
+    
 
     # calculating bmr and then calorie
+    bmr_women = 1
+    bmr_men = 1
+    cal = 1
     if(gender == 0):
         bmr_women = (10*w) + (6.25*h) - (5*age) - 161
     if (activity == 1.20):
@@ -95,6 +102,9 @@ def diet(w,h,bmi,age,vegNonveg,gender,activity):
         print("Enter correct details")
     print("BMR: ",bmr_men)
 
+    print(f'BMI is {bmi}')
+    print(f'cal is {cal}')
+
     calorie = 0
     if (bmi == "normal"):
         calorie = int(cal)
@@ -107,16 +117,19 @@ def diet(w,h,bmi,age,vegNonveg,gender,activity):
         print("calorie: ",calorie)
 
     # to get the index from value
+    print(calorie)
+    print(f'calorie is {calorie}')
     index = dataset.calorie_intake[dataset.calorie_intake==calorie].index.tolist()
     print(index)
     # to get the value from index
     i = index[0]
-    dataset.food[i]
+    return dataset.food[i]
+    
 
 # flask route for diet
 @app.route("/diet", methods=["POST"])
 @cross_origin()
-def api():
+def diet_api():
     json_data = flask.request.json
     print(flask.request)
     print(json_data)
@@ -132,7 +145,8 @@ def api():
             gender=0
         else:
             gender=1 
-        activity = float(json_data[4])
+            
+        activity = float(json_data[6])
     else:
         return jsonify({"Sarang": "OP"})
     dietOutput = diet(w,h,bmi,age,vegNonveg,gender,activity)
@@ -187,7 +201,7 @@ def yoga_position(bmi, age, weight, height):
 # flask route
 @app.route("/yoga", methods=["POST"])
 @cross_origin()
-def diet_api():
+def yoga_api():
     json_data = flask.request.json
     print(flask.request)
     print(json_data)

@@ -19,6 +19,7 @@ auth.onAuthStateChanged((user) => {
         const vegNonveg = doc.data().meal;
         const gender = doc.data().gender;
         const activity = doc.data().activity;
+        console.log(`activity is ${activity}`);
         const h = doc.data().height;
         const w = doc.data().weight;
         const inputYoga = [height, weight, BMI, age];
@@ -31,7 +32,7 @@ auth.onAuthStateChanged((user) => {
         });
         axios.post("http://localhost:5000/diet", inputDiet).then((response) => {
           console.log(response.data);
-          const dietHTML = `<div>${response.data.output[1]}</div>`;
+          const dietHTML = `<div>${response.data.output}</div>`;
           dietContent.innerHTML = dietHTML;
         });
       });
