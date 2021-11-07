@@ -174,7 +174,6 @@ h1 {
 31%-48%-significantly over weight
 49%-95%-dangerously over weight */
 
-
 /* 12-19 - Under-weight
 20-24 - Healthy Weight
 25-29 - Over-weight
@@ -242,8 +241,6 @@ h1 {
   bottom: 217px;
 }
 
-
-
 .submit:hover {
   box-shadow: 5px 5px 15px #aaa;
   background-color: #799741;
@@ -260,13 +257,11 @@ h1 {
   text-align: center;
 }
 
-
-
 .button {
   font-size: 22px;
   padding: 10px;
   color: #fff;
-  border: 2px solid #06D85F;
+  border: 2px solid #06d85f;
   border-radius: 20px/50px;
   text-decoration: none;
   cursor: pointer;
@@ -314,7 +309,6 @@ h1 {
   width: 50%;
   height: 60%;
   position: relative;
-  
 }
 
 .popup h2 {
@@ -339,11 +333,11 @@ h1 {
   overflow: auto;
 }
 
-@media screen and (max-width: 700px){
-  .box{
+@media screen and (max-width: 700px) {
+  .box {
     width: 70%;
   }
-  .popup{
+  .popup {
     width: 70%;
   }
 }
@@ -351,12 +345,26 @@ h1 {
 .user-details {
   font-family: sans-serif;
   font-size: 30px;
-  
+
   font-variant: normal;
   text-transform: uppercase;
   margin-top: 10px;
   text-align: center !important;
-  
+
+  line-height: 70px;
+  font-weight: 600;
+  color: black;
+}
+.diet-content,
+.yoga-content {
+  font-family: sans-serif;
+  /* font-size: 30px; */
+
+  font-variant: normal;
+  text-transform: uppercase;
+  margin-top: 10px;
+  text-align: center !important;
+
   line-height: 70px;
   font-weight: 600;
   color: black;

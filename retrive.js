@@ -36,7 +36,7 @@ auth.onAuthStateChanged((user) => {
           console.log(response.data);
           let dietArray = response.data.output.split(",").join("\n");
           console.log(dietArray);
-          const dietHTML = `<div>${dietArray}</div>`;
+          const dietHTML = `<div>${response.data.output}</div>`;
           dietContent.innerHTML = dietHTML;
         });
       });
