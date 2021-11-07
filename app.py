@@ -195,7 +195,7 @@ def yoga_position(bmi, age, weight, height):
         for i in range(3):
             random_poses = random.choice(yoga_poses_gain)
         poses.append(random_poses)
-    return bmiQuality, poses
+    return poses
 
 
 # flask route
