@@ -9,7 +9,7 @@ auth.onAuthStateChanged((user) => {
       .then((doc) => {
         const html = `
         <div>Hey ${doc.data().name}</div>
-        <div>Your BMI is ${doc.data().BMI} </div>
+        <span>Your BMI is ${doc.data().BMI} </span>
         `;
         userDetails.innerHTML = html;
         const height = doc.data().height;
