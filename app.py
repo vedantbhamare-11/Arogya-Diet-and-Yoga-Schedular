@@ -139,7 +139,11 @@ def diet_api():
         h = int(json_data[1])
         bmi = int(json_data[2])
         age = int(json_data[3])
-        vegNonveg = json_data[4]        
+        vegNonveg = json_data[4] 
+        if (vegNonveg=='veg'):
+            vegNonveg = 0
+        else:
+            vegNonveg = 1        
         gender = json_data[5]
         if (gender=='female'):
             gender=0
