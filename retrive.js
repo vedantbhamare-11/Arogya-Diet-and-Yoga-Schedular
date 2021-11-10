@@ -34,7 +34,9 @@ auth.onAuthStateChanged((user) => {
         });
         axios.post("http://localhost:5000/diet", inputDiet).then((response) => {
           console.log(response.data);
-          const dietHTML = `<div>${response.data.output}</div>`;
+          let dietString = response.data.output + "";
+          let dietArray = dietString.split(";").join("<br>");
+          const dietHTML = `<div>${dietArray}</div>`;
           dietContent.innerHTML = dietHTML;
         });
       });
