@@ -40,6 +40,11 @@ var i = auth.onAuthStateChanged((user) => {
           case bmiValue < 43 && bmiValue >= 40:
             ele.style.left = "53%";
             break;
+          case bmiValue < 47 && bmiValue >= 44:
+            ele.style.left = "57%";
+            break;
+          default:
+            ele.style.left = "62%";
         }
       });
   }
