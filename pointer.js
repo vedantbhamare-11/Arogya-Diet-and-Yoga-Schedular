@@ -7,7 +7,7 @@ var i = auth.onAuthStateChanged((user) => {
         const bmiValue = doc.data().BMI;
         var ele = document.getElementById("pointer");
         switch (true) {
-          case bmiValue <= 14 && bmiValue >= 12:
+          case bmiValue <= 14 && bmiValue >= 8:
             ele.style.left = "4%";
             break;
           case bmiValue <= 17 && bmiValue >= 15:
