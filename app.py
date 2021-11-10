@@ -122,8 +122,15 @@ def diet(w,h,bmi,age,vegNonveg,gender,activity):
     index = dataset.calorie_intake[dataset.calorie_intake==calorie].index.tolist()
     print(index)
     # to get the value from index
-    i = index[0]
-    return dataset.food[i]
+    if not index:
+        foodType=dataset.vegNonveg[dataset.vegNonveg==vegNonveg].index.tolist()
+        print("food type",foodType)
+        randomIndex = random.choice(foodType)
+        return dataset.food[randomIndex]
+    else:
+        # to get the value from index
+        i = index[0]
+        return dataset.food[i]
     
 
 # flask route for diet

@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
+import random
 
 dataset = pd.read_csv("food.csv")
 #Seprating dataset into input and output values
@@ -95,6 +96,17 @@ if (bmi == "high"):
 # to get the index from value
 index = dataset.calorie_intake[dataset.calorie_intake==calorie].index.tolist()
 print(index)
-# to get the value from index
-i = index[0]
-dataset.food[i]
+
+if not index:
+  foodType=dataset.vegNonveg[dataset.vegNonveg==vegNonveg].index.tolist()
+  print("food type",foodType)
+  randomIndex = random.choice(foodType)
+  print("random INdex",randomIndex)
+  print(dataset.food[randomIndex])
+else:
+  # to get the value from index
+  i = index[0]
+  print(dataset.food[i])  
+
+
+

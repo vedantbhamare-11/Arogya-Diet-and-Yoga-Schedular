@@ -27,7 +27,7 @@ auth.onAuthStateChanged((user) => {
 
         axios.post("http://localhost:5000/yoga", inputYoga).then((response) => {
           console.log(response.data);
-          const yogaHTML = `<div>${response.data.output[0]}</div>;
+          const yogaHTML = `<div>${response.data.output[0]}</div>
           <div>${response.data.output[1]}</div>
           <div>${response.data.output[2]}</div>`;
           yogaContent.innerHTML = yogaHTML;
