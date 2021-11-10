@@ -27,15 +27,13 @@ auth.onAuthStateChanged((user) => {
 
         axios.post("http://localhost:5000/yoga", inputYoga).then((response) => {
           console.log(response.data);
-          const yogaHTML = `<div>${response.data.output[0]}</div>
-          <div>${response.data.output[1]}</div>
-          <div>${response.data.output[2]}</div>`;
+          const yogaHTML = `<div>${response.data.output}</div>`;
+          // <div>${response.data.output[1]}</div>
+          // <div>${response.data.output[2]}</div>`;
           yogaContent.innerHTML = yogaHTML;
         });
         axios.post("http://localhost:5000/diet", inputDiet).then((response) => {
           console.log(response.data);
-          let dietArray = response.data.output.split(",").join("\n");
-          console.log(dietArray);
           const dietHTML = `<div>${response.data.output}</div>`;
           dietContent.innerHTML = dietHTML;
         });
