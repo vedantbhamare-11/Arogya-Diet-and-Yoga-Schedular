@@ -191,14 +191,14 @@ def yoga_position(bmi, age, weight, height):
         bmiQuality = 'high'
         for i in range(3):
             random_poses = random.choice(yoga_poses_gain)
-        poses.append(random_poses)
+            poses.append(random_poses)
 
     else:
         yoga_poses_gain = dataset['normal']
         bmiQuality = 'normal'
         for i in range(3):
             random_poses = random.choice(yoga_poses_gain)
-        poses.append(random_poses)
+            poses.append(random_poses)
     return poses
 
 
